@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.msbuild" Version="3.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeCoverage" Version="16.10.0" />
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="NunitXml.TestLogger" Version="3.0.107" />
+    <PackageReference Include="selenium.support" Version="3.141.0" />
+    <PackageReference Include="selenium.webdriver" Version="3.141.0" />
+    <PackageReference Include="selenium.webdriver.chromedriver" Version="78.0.3904.10500" />
+    <PackageReference Include="selenium.webdriver.microsoftdriver" Version="17.17134.0" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.9.8" />
+    <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FinancieraCore2020.Dominio\FinancieraCore2020.Dominio.csproj" />
+  </ItemGroup>
+
+</Project>
